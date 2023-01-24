@@ -13,8 +13,8 @@ phases:
     commands:
     - echo Build completed on `date`
     - mvn clean package
-    #- mv target/elasticbeanstalk-sample-0.0.1-SNAPSHOT.war elasticbeanstalk-sample-0.0.1-SNAPSHOT.jar
+    - mv target/demo-0.0.1-SNAPSHOT.jar demo-0.0.1-SNAPSHOT.jar
 artifacts:
   files:
-  - elasticbeanstalk-sample-0.0.1-SNAPSHOT.war
+  - demo-0.0.1-SNAPSHOT.jar
   - .ebextensions/**/*
